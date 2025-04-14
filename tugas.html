@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Elegan</title>
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #222;
+      --accent-color: #0077ff;
+    }
+
+    body.dark {
+      --bg-color: #1a1a1a;
+      --text-color: #f0f0f0;
+      --accent-color: #00aaff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      transition: all 0.3s ease;
+    }
+
+    header {
+      background: var(--accent-color);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.03);
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .toggle-btn {
+      background: white;
+      color: var(--accent-color);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .toggle-btn:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Tugas Desain Web </strong></div>
+    <nav>
+      <a href="#about">Nama Saya</a>
+      <a href="#projects">Tempat Tanggal Lahir</a>
+      <a href="#contact">Sosial Media</a>
+      <button class="toggle-btn" onclick="toggleMode()">🌙</button>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="about" class="card">
+      <h1>Halo, Saya Alfiano Bilo Bude</h1>
+      <p>Saya seorang pelajar yang suka membangun website keren dan responsif menggunakan teknologi modern. Saya suka bekerja dengan HTML, CSS, dan JavaScript.</p>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Nama Saya</h2>
+      <ul>
+        <li>Halo nama saya Alfiano Bilo bude biasa dipanggil alfino saya sekarang kelas 11 dan bersekolah di smkn 2 ende </li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+        <h2>Tempat Tanggal Lahir</h2>
+        <ul>
+          <li>Ende,14 Februari 2007</li>
+        </ul>
+      </section>
+  
+
+    <section id="contact" class="card">
+      <h2>Sosial Media</h2>
+      <p>Instagram: <a href="#" target="_blank">Alfiano12</a></p>
+      <p>Facebook: <a href="#" target="_blank">Fiano Bude</a></p>
+      <p>Nomor Wa: <a href="#" target="_blank">08123456789</a></p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 MyWebsite ❤️.
+  </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
